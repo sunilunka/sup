@@ -1,28 +1,22 @@
 
 ;(function($,document,window) {
 	
-	var $doc = $(document),
-		$window = $(window),
+	var $doc = $(document), $window = $(window);
 
-
-	winOffset = function(){
+	var winOffset = function(){
 			return window.pageYOffset;
 		};
 
-	function randomNum(){
+	var randomNum = function(){
 			var randNum = Math.random();
 			return randNum;
 	};
 
-
-		
 	/*Functions and variables for scrambling title*/
-	
 
 	var myName = ["S","U","N","I","L","U", "N", "K", "A"],
 		refArray = [];	//Array for scrambleIn to check against
-	
-				
+
 	
 	function introFade(a) {
 		var $iA = $("#"+a),
